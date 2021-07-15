@@ -41,7 +41,6 @@ function validateGuess(guess){
 }
 
 function checkGuess(guess){
-    //Display clue if guess is too high or too low
     if (guess === randomNumber){
         displayMessage(`You guessed correctly!`);
         endGame();
@@ -99,6 +98,5 @@ restartBtn.addEventListener('click', function(e){
         remaining.innerHTML = `${11 - numGuesses}  `;
         userInput.removeAttribute('disabled');
         startOver.removeChild(p);
-        playGame = true;
-        
+        playGame = true;        
 });

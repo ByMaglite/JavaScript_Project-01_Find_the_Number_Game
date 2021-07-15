@@ -2,6 +2,7 @@ html{
     font-family: sans-serif;
 }
 body{
+    /* border: 1px solid black; */
     width: 50%;
     max-width: 750px;
     min-width: 480px;
@@ -10,7 +11,7 @@ body{
 .card_div{
     /* border: 1px solid black; */
     margin-top: 60px !important;
-    box-shadow: 0 14px 28px rgba(0 , 0, 0, 0.25), 0 10px 10px rgba(0 , 0, 0, 0.8);
+    box-shadow: 0 14px 28px rgba(0 , 0, 0, 0.25), 0 10px 10px rgba(0 , 0, 0, 0.22);
     border-radius: 4px !important;
 }
 .lastResult{
@@ -71,6 +72,10 @@ button{
     margin-top: 120px;
     color:#fff;
 }
+.guesses{
+    background-color: #12aab4;
+}
+
 #wrapper{
     box-sizing: border-box;
     text-align: center;
@@ -102,7 +107,7 @@ label{
     font-weight: 600 !important;
     font-family: inherit !important;
 }
-.guess_field{
+.guess_Field{
 border: 1px solid white;
 padding-right: 12px;
 padding-left: 12px;
