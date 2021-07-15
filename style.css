@@ -1,0 +1,113 @@
+html{
+    font-family: sans-serif;
+}
+body{
+    width: 50%;
+    max-width: 750px;
+    min-width: 480px;
+    margin: 0 auto;
+}
+.card_div{
+    /* border: 1px solid black; */
+    margin-top: 60px !important;
+    box-shadow: 0 14px 28px rgba(0 , 0, 0, 0.25), 0 10px 10px rgba(0 , 0, 0, 0.8);
+    border-radius: 4px !important;
+}
+.lastResult{
+    color: white;
+    padding: 7px;
+}
+.guesses{
+    color: white;
+    padding: 7px;
+}
+button{
+    background-color: purple;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 30px;
+    border-style: none;
+    margin-top: 30px;
+}
+#subt{
+    background-color: yellow;
+    color: #000;
+    width: 241px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 30px;
+    border-style: none;
+    margin-top: 50px;
+    font-weight:600;
+    font-family: auto;
+}
+#restart{
+    background-color: yellow;
+    color: #000;
+    width: 241px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 30px;
+    border-style: none;
+    margin-top: 50px;
+    font-weight:600;
+    font-family: auto;
+}
+#guessField{
+    color: #000;
+    width: 550px;
+    height: 79px;
+    font-size: 30px;
+    border-style: none;
+    margin-top: 25px;
+    font-size: 45px;
+    border:5px solid #14727d;
+    text-align: center;
+}
+#guess{
+    font-size: 55px;
+    margin-top: 120px;
+    color:#fff;
+}
+#wrapper{
+    box-sizing: border-box;
+    text-align: center;
+    width:750px;
+    height: 550px;
+    background-color: #12aab4;
+    color: #fff;
+    font-size: 25px;
+}
+h1{
+    background-color: #b91e1e;
+    color: #fff;
+    text-align: center;
+    width: 724px;
+    font-family: none;
+    padding: 13px;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+    font-family: none;
+    font-weight: 500;
+}
+label{
+    font-weight: 600;
+    font-size: 49px;
+}
+.last_p{
+    font-weight: 600 !important;
+    font-family: inherit !important;
+}
+.guess_field{
+border: 1px solid white;
+padding-right: 12px;
+padding-left: 12px;
+background-color: white;
+color: black;
+margin-left: 3px;
+
+}
