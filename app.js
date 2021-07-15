@@ -27,18 +27,14 @@ function validateGuess(guess){
         alert('Please enter a number greater than 1!');
     } else if (guess > 100){
         alert('Please enter a number less than 500!')
-    } else {
-        //Keep record of number of attempted guesses
+    } else {        
         previousGuesses.push(guess);
-        //Check to see if game is over
         if (numGuesses === 11){
             displayGuesses(guess);
             displayMessage(`Game Over! Number was ${randomNumber}`);
             endGame();
         } else {
-        //Display previous guessed numbers
         displayGuesses(guess);
-        //Check guess and display if wrong
         checkGuess(guess);
         }
     }
@@ -69,11 +65,8 @@ function displayMessage(message){
 }
 
 function endGame(){
-    //Clear user input
     userInput.value = '';
-    //Disable user input button
     userInput.setAttribute('disabled', '');
-    //Display Start new Game Button
           p.classList.add('button');
           p.innerHTML = `<h1 id="newGame">Start New Game</h1>`
     startOver.appendChild(p);
@@ -85,7 +78,6 @@ function endGame(){
 function newGame(){
     const newGameButton = document.querySelector('#newGame');
     newGameButton.addEventListener('click', function(){
-        //Pick a new random number
         randomNumber = parseInt((Math.random()*100)+1);
         previousGuesses = [];
         numGuesses = 1;
