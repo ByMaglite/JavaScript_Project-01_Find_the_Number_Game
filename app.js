@@ -1,13 +1,13 @@
-let randomNumber = parseInt((Math.random()*100)+1);
+let randomNumber = parseInt((Math.random()*100)+1); //parseInt() metodu, kendisine ondalıklı olarak verdiğiniz değerin ondalık kısmını siler ve kalan kısımdan yeni bir değişken oluşturarak döndürür.parseInt(), veri türü ne olursa olsun girilen değeri number veri türüne dönüştürecektir. Y 
 const submit = document.querySelector('#subt');
 const userInput = document.querySelector('#guessField');
 const guessSlot = document.querySelector('.guesses');
 const remaining = document.querySelector('.lastResult');
 const startOver = document.querySelector('.resultParas');
 const lowOrHi = document.querySelector('.lowOrHi');
-const p = document.createElement('p');
-let previousGuesses = [];
-let numGuesses = 1;
+const p = document.createElement('p');//p tag i oluşturduk
+let previousGuesses = []; //Önceki tahminleri buraya atacağız
+let numGuesses = 1; //başlangıç depğerini 1 verdik , 11 den düşeceğiz
 let playGame = true;
 let restartBtn=$('#restart')
 restartBtn.hide()
@@ -42,7 +42,7 @@ function validateGuess(guess){
 
 function checkGuess(guess){
     if (guess === randomNumber){
-        displayMessage(`You guessed correctly!`);
+        displayMessage(`You guessed correctly!(BZ)`);
         endGame();
     } else if (guess < randomNumber) {
         displayMessage(`Too low! Try again!`);
