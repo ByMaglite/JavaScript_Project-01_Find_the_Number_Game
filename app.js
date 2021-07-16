@@ -13,16 +13,16 @@ let restartBtn=$('#restart')
 restartBtn.hide()
 
 if (playGame){
-    subt.addEventListener('click', function(e){
-        e.preventDefault();
+    subt.addEventListener('click', function(e){   //#subt tıklandığında function(e) çağrılacak
+        e.preventDefault();                       // preventDefault() varsayılan eylemi engelliyor
         const guess = parseInt(userInput.value);
         validateGuess(guess);
     });
 }
 
 function validateGuess(guess){
-    if (isNaN(guess)){
-        alert('Please enter a valid number');
+    if (isNaN(guess)){                        //isNaN metodu aldığı değerin/değişkenin rakam olup-olmadığını kontrol eder. 
+        alert('Please enter a valid number'); // Eğer rakam değilse (NaN - Not a Number) true döndürür. Diğer türlü false döndürür.
     } else if (guess < 1) {
         alert('Please enter a number greater than 1!');
     } else if (guess > 100){
@@ -40,7 +40,7 @@ function validateGuess(guess){
     }
 }
 
-function checkGuess(guess){
+function checkGuess(guess){                           //bu fonksiyonla girilen sayıyı random sayı ile karşılaştırıyoruz
     if (guess === randomNumber){
         displayMessage(`You guessed correctly!(BZ)`);
         endGame();
